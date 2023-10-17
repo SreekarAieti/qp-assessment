@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: GroceryBooking-image:latest
+    ports:
+      - "8080:8080"
+    deploy:
+      replicas:
+        min: 2
+        max: 3
